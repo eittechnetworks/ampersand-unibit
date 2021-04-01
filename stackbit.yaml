@@ -15,15 +15,6 @@ metadata:
   images:
     small: images/demo-256x192.png
     large: images/demo-1024x768.png
-pageData:
-  - pagePath: "/"
-    initialExpandedPaths:
-      - '[0]'
-      - '[0].fields.intro_content'
-      - '[0].fields.intro_actions'
-      - '[1]'
-      - '[1].fields.layout_style'
-      - '[1].fields.palette'
 sourceMapping:
   - source:
       fieldPath: author.name
@@ -507,6 +498,7 @@ models:
             - noimageindex
             - notranslate
             - none
+        default: [all]
       - type: list
         name: extra
         label: Extra
